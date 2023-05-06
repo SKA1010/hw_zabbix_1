@@ -36,3 +36,30 @@ sudo apt update
    18  sudo systemctl restart zabbix-server zabbix-agent apache2
    
    19  sudo systemctl enable zabbix-server zabbix-agent apache2
+   
+   
+   **Задание 2**
+
+![image](https://user-images.githubusercontent.com/125235217/236622509-214e72c7-dbab-4717-9357-2602da9a2a80.png)
+
+
+![image](https://user-images.githubusercontent.com/125235217/236622733-4883dab9-3d31-40ba-9c55-2cdfa3936dcf.png)
+
+![image](https://user-images.githubusercontent.com/125235217/236623459-7d370d63-d7f5-4c4b-8436-a4ba0ce9d40b.png)
+
+
+Команды: 
+
+       wget https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_6.4-1+debian10_all.deb
+       
+       dpkg -i zabbix-release_6.4-1+debian10_all.deb
+       
+       sudo dpkg -i zabbix-release_6.4-1+debian10_all.deb
+       
+       apt update
+       
+       sudo apt install zabbix-agent
+       
+       systemctl restart zabbix-agent
+       
+       systemctl enable zabbix-agent
